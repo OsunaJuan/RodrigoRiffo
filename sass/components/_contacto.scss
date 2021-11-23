@@ -1,0 +1,52 @@
+// Variables  ------------------------------------------------->
+@import "../base/variables";
+
+.main-contact{
+    background-color: $bg-white;
+    .main-contact__container{
+        width: 80%;
+        margin: 0 auto;
+        
+        .contact__container--tittle{
+            margin: 20px 0px;
+            text-align: center;
+
+            p{
+                @include font(1.6rem, normal,300,$ft-black)
+            }
+
+            h2{
+                @include font(2.5rem,normal,300,$ft-black)
+            }
+        }
+
+        .contact__container--form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            input{
+                width: 80%;
+                margin-top: 10px;
+                border: 1px solid grey;
+                border-radius: 4px;
+
+                &:nth-child(5){
+                    height: 100px;
+                }
+            }    
+        }
+
+        button{
+            background-color: white;
+            margin: 10px;
+            width: 100px;
+            margin-left: calc(50% - 50px);
+            border: 1px solid grey;
+            border-radius: 4px;
+        }
+
+
+    }
+
+}

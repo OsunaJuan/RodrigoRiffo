@@ -1,0 +1,45 @@
+// Reseteo de estilos  ------------------------------------------------->
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-size: 1.6rem;
+    height: 100%;
+    width: 100%;
+}
+
+// fuentes ------------------------------------------------->
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+
+
+// Variables  ------------------------------------------------->
+
+@import "./base/variables";
+
+// Componentes ------------------------------------------------->
+@import "./components/header";
+@import "./components/footer";
+@import "./components/index";
+@import "./components/fotografia";
+@import "./components/albumes";
+@import "./components/biografia";
+@import "./components/prensa";
+@import "./components/contacto";
+
+.need{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    margin: 0;
+}
+

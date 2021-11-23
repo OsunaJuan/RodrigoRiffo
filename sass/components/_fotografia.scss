@@ -1,0 +1,43 @@
+// Variables  ------------------------------------------------->
+@import "../base/variables";
+
+.main-fotografia{
+    width: 100%;
+    padding: 30px;
+    background-color: $bg-white;
+
+    .main-fotografia__display{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        article{
+            text-align: center;
+            margin: 15px;
+
+            @media screen and (min-width:1024px) and (max-width:1339px) {
+                margin: 20px
+            }
+            img{
+                @include images(100%, 550px, 288px,auto,150px);
+                // border: 1px solid grey;
+                box-shadow: 0px 4px 8px 0px rgba($color:black, $alpha: 0.45);
+                transition: all 0.5s;
+
+                &:hover{
+                    transform: scale(1.013);
+                    box-shadow: 0px 6px 8px 0px rgba($color:black, $alpha: 0.15);
+                }
+
+                @media screen and (min-width:1024px) and (max-width:1339px){
+                    @include images(100%, 400px, 288px,auto,150px)
+                }
+            }
+            h2{
+                @include font(3rem, italic, 100, $ft-black );
+                margin-top: 10px
+            }
+        }
+    }
+}

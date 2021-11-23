@@ -1,0 +1,35 @@
+// Variables  ------------------------------------------------->
+@import "../base/variables";
+
+.main-press{
+    width: 100%;
+    background-color: $bg-white;
+    .main-press__container{
+        width: 90%;
+        text-align: start;
+        margin: 0 auto;
+
+        h1,h2,h3{
+            @include font(2.6rem,normal,bold,$ft-black);
+            margin:20px;
+
+            @media screen and (max-width:768px) {
+                font-size: 2rem;
+            }
+        }
+
+        p{
+            @include font(1.6rem,normal,300,$ft-black);
+            margin: 10px;
+        }
+
+        a{
+            @include font(2.6rem,normal,bold,$ft-black);
+        }
+        
+    }
+}
+
+.fill{
+    @include fill-page;
+}

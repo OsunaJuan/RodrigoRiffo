@@ -1,0 +1,26 @@
+// Variables  ------------------------------------------------->
+
+@import "../base/variables";
+
+.header-container{
+    .header-container__nav{
+        background-color: $bg-black;
+
+        .navbar-brand{
+            @include font(3.5rem,italic,100,$ft-white);
+
+            &:hover{
+                opacity: 75%;
+            }
+        }
+
+        .nav-link{
+            @include font(1.6rem, normal ,300,$ft-white);
+
+            &:hover{
+                opacity: 75%;
+                border-bottom: 1px solid $ft-white;
+            }
+        }
+    }
+}

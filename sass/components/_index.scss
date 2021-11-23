@@ -1,0 +1,115 @@
+// Variables  ------------------------------------------------->
+@import "../base/variables";
+
+
+@media screen and (min-width:320px)  and (max-width:849px)  {
+    .main-index{
+        height: 100vh;
+        width: 100vw;
+        background-color: $bg-black;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @keyframes fade-in {
+            0%{
+                opacity: 0%;
+            }
+    
+            100%{
+                opacity: 100%;
+            }
+        }
+
+        figure{
+            order:1;
+            position: absolute;
+            bottom: 0;
+            animation: fade-in 3s;
+            img{
+                @include images(100%, 300px, 0px, auto, 150px)
+              
+            }
+        }
+    
+        .index-tittle__container{
+            position: absolute;
+            top: 20%;
+            text-align: center;
+            animation: fade-in 3s;
+          
+            .main-tittle{
+                h1{
+                    @include font(3.5rem,italic,100,$ft-white);
+                }
+            }
+    
+            .main-a{
+                a{
+                    @include font(2.6rem,normal,300,$ft-white);
+                    text-decoration: none; 
+                }
+            }
+        }
+
+
+    }
+}
+
+@media screen and (min-width:850px) {
+    .main-index{
+        height: 100%;
+        width: 100%;
+        background-color: $bg-black;
+        
+        @keyframes fade-in {
+            0%{
+                opacity: 0%;
+            }
+    
+            100%{
+                opacity: 100%;
+            }
+        }
+        figure{
+            animation: fade-in 3s;
+            img{
+                @include images(100%,600px,288px,auto,150px);
+                position: absolute;
+                bottom: 0;
+                left: 10%;
+    
+                @media screen and (max-width:1024px) and (min-width:850px) {
+                    max-width: 500px;
+                }
+            }
+        }
+    
+        .index-tittle__container{
+            position: absolute;
+            left: 60%;
+            top: 40%;
+            animation: fade-in 3s;
+            .main-tittle{
+                h1{
+                    @include font(4.5rem,italic,100,$ft-white);
+                }
+            }
+    
+            .main-a{
+                a{
+                    @include font(2.5rem,normal,300,$ft-white);
+                    text-decoration: none;
+    
+                    &:hover{
+                        opacity: 75%;
+                        border-bottom: 1px solid white;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+
+
