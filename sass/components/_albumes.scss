@@ -20,10 +20,11 @@
         min-width: 288px;
         margin: 0 auto;
         
+        
         p{
             @include font(1.6rem,normal,300,$ft-black);
             margin:20px auto;
-            
+            text-align: center;
         }
     }
 
