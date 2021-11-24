@@ -7,6 +7,8 @@
         width: 80%;
         margin: 0 auto;
         
+        
+        
         .contact__container--tittle{
             margin: 20px 0px;
             text-align: center;
@@ -24,26 +26,46 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            max-width: 550px;
+            width: 100%;
+            margin: 0 auto;
 
-            input{
-                width: 80%;
-                margin-top: 10px;
-                border: 1px solid grey;
-                border-radius: 4px;
+            .form--input{
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 550px;
+                width: 100%;
+                margin-bottom: 10px;
+
+                h2{
+                    @include font(3rem, italic, 100, $ft-black );
+                }
+
+                img{
+                    margin-right: 10px;
+                }
+                
+                input{
+                    max-width: 550px;
+                    width: 100%;
+                }
 
                 &:nth-child(5){
-                    height: 100px;
+                    input{
+                        height: 100px;
+                    }
                 }
-            }    
+            }
         }
 
         button{
-            background-color: white;
+            background-color: black;
+            color: $ft-white;
             margin: 10px;
             width: 100px;
             margin-left: calc(50% - 50px);
             border: 1px solid grey;
-            border-radius: 4px;
+           
         }
 
 
