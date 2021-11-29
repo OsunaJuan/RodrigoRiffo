@@ -16,6 +16,8 @@
 
         .nav-link{
             @include font(1.6rem, normal ,300,$ft-white);
+            border-bottom: 1px solid $bg-black;
+            transition: all 0.5s;
 
             &:hover{
                 opacity: 75%;

@@ -36,6 +36,8 @@ body {
   font-style: normal;
   font-weight: 300;
   color: #fafaf5;
+  border-bottom: 1px solid black;
+  transition: all 0.5s;
 }
 .header-container .header-container__nav .nav-link:hover {
   opacity: 75%;
@@ -43,31 +45,54 @@ body {
 }
 
 .footer-container {
+  flex: 1;
+  background-color: #fafaf5;
   width: 100%;
-  height: 50px;
+  height: 50px !important;
 }
 .footer-container .footer-container__block {
   display: flex;
   height: 100%;
   background-color: black;
+  align-content: center;
 }
 .footer-container .footer-container__block .footer__block--left {
+  height: 100%;
+  display: flex;
+  align-content: center;
   width: 50%;
   color: #fafaf5;
 }
-.footer-container .footer-container__block .footer__block--left p {
-  margin: 13px 10px 0px 20px;
+.footer-container .footer-container__block .footer__block--left div {
+  height: 24px;
+  margin: auto 0 auto 10px;
+}
+.footer-container .footer-container__block .footer__block--left div p {
+  margin: 0;
   display: inline-block;
+  font-size: 1.6rem;
+}
+.footer-container .footer-container__block .footer__block--left div img {
+  height: 16px;
+  width: 16px;
 }
 .footer-container .footer-container__block .footer__block--right {
   width: 50%;
+  height: 100%;
   display: flex;
   justify-content: end;
 }
-.footer-container .footer-container__block .footer__block--right img {
+.footer-container .footer-container__block .footer__block--right div {
+  margin: auto 0;
+}
+.footer-container .footer-container__block .footer__block--right div img {
+  margin: auto 10px auto 0;
   width: 30px;
   height: 30px;
-  margin: 10px 20px 0px 0px;
+  transition: all 0.5s;
+}
+.footer-container .footer-container__block .footer__block--right div img:hover {
+  opacity: 75%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 849px) {
@@ -313,10 +338,11 @@ body {
   justify-content: center;
   width: 70%;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 .main-biografia .main-biografia__container .biografia__container--image figure img {
   width: 100%;
-  max-width: 550px;
+  max-width: 350px;
   min-width: 288px;
   height: auto;
   min-height: 150px;
@@ -430,8 +456,8 @@ body {
 }
 .main-contact .main-contact__container .contact__container--form .form--input h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
-  font-style: italic;
+  font-size: 2rem;
+  font-style: normal;
   font-weight: 100;
   color: black;
 }
