@@ -7,6 +7,23 @@
     width: 100%;
     overflow-x: hidden;
 
+    .main-album__links{
+        width: fit-content;
+        margin: 10px auto;
+
+        a{
+            @include font(1.6rem, normal,400,$ft-black);
+            text-decoration: none;
+            margin-right:10px ;
+        }
+
+        .inactive{
+            opacity: 50%;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+    }
+
     h1{
         margin: 30px 0px;
         width: 100%;

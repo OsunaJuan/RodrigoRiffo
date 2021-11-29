@@ -263,6 +263,24 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+.main-album .main-album__links {
+  width: fit-content;
+  margin: 10px auto;
+}
+.main-album .main-album__links a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.main-album .main-album__links .inactive {
+  color: grey;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 .main-album h1 {
   margin: 30px 0px;
   width: 100%;
