@@ -63,6 +63,11 @@
                     @include images(100%,500px,228px, auto, 150px);
                     margin:20px
                 }
+
+                .landscape{
+                    @include images(100%,1000px,228px, auto, 150px);
+                    margin:20px
+                }                
             }
             
         }

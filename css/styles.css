@@ -277,7 +277,7 @@ body {
   margin-right: 10px;
 }
 .main-album .main-album__links .inactive {
-  color: grey;
+  opacity: 50%;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -324,6 +324,14 @@ body {
 .main-album .main-album__container .album__container--images div img, .main-album .main-album__container .album__container--images figure img {
   width: 100%;
   max-width: 500px;
+  min-width: 228px;
+  height: auto;
+  min-height: 150px;
+  margin: 20px;
+}
+.main-album .main-album__container .album__container--images div .landscape, .main-album .main-album__container .album__container--images figure .landscape {
+  width: 100%;
+  max-width: 1000px;
   min-width: 228px;
   height: auto;
   min-height: 150px;
