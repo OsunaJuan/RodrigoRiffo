@@ -7,7 +7,7 @@
     .main-press__container{
         width: 90%;
         text-align: justify;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
 
         h1,h2,h3{
             @include font(2.6rem,normal,bold,$ft-black);
@@ -24,7 +24,17 @@
         }
 
         a{
-            @include font(2.6rem,normal,bold,$ft-black);
+            padding: 10px;
+            @include font(2rem,normal,bold,$ft-black);
+            text-decoration: none;
+            background-image: linear-gradient(90deg, black, black);
+            background-position: left bottom;
+            background-size: 0% 1px;
+            background-repeat: no-repeat;
+            transition: all 0.5s;
+            &:hover{
+                background-size: 100% 1px;
+            }
         }
         
     }

@@ -17,31 +17,92 @@ body {
   width: 100%;
 }
 
-.header-container .header-container__nav {
+header .navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
   background-color: black;
+  color: #fafaf5;
 }
-.header-container .header-container__nav .navbar-brand {
+header .navbar .brand-title {
+  margin: 20px;
+}
+header .navbar .brand-title a {
+  text-decoration: none;
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
   font-size: 3.5rem;
   font-style: italic;
   font-weight: 100;
   color: #fafaf5;
 }
-.header-container .header-container__nav .navbar-brand:hover {
-  opacity: 75%;
+header .navbar .navbar-links {
+  height: 100%;
+  margin-right: 10px;
 }
-.header-container .header-container__nav .nav-link {
+header .navbar .navbar-links ul {
+  display: flex;
+}
+header .navbar .navbar-links ul li {
+  list-style: none;
+}
+header .navbar .navbar-links ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 15px 10px 15px;
+  background-image: linear-gradient(90deg, white, white);
+  background-position: left bottom;
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 300;
   color: #fafaf5;
-  border-bottom: 1px solid black;
   transition: all 0.5s;
 }
-.header-container .header-container__nav .nav-link:hover {
-  opacity: 75%;
-  border-bottom: 1px solid #fafaf5;
+header .navbar .navbar-links ul li a:hover {
+  background-size: 100% 1px;
+}
+header .navbar .toggle-button {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+header .navbar .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fafaf5;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  header .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .navbar .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  header .navbar .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  header .navbar .navbar-links ul li {
+    text-align: center;
+  }
+  header .navbar .navbar-links.active {
+    display: flex;
+  }
+  header .navbar .toggle-button {
+    display: flex;
+  }
 }
 
 .footer-container {
@@ -70,9 +131,15 @@ body {
 .footer-container .footer-container__block .footer__block--left div p {
   margin: 0;
   display: inline-block;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  color: #fafaf5;
 }
 .footer-container .footer-container__block .footer__block--left div img {
+  position: relative;
+  top: 3px;
   height: 16px;
   width: 16px;
 }
@@ -408,7 +475,7 @@ body {
 .main-press .main-press__container {
   width: 90%;
   text-align: justify;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 .main-press .main-press__container h1, .main-press .main-press__container h2, .main-press .main-press__container h3 {
   font-family: "Roboto", sans-serif;
@@ -432,11 +499,21 @@ body {
   margin: 10px;
 }
 .main-press .main-press__container a {
+  padding: 10px;
   font-family: "Roboto", sans-serif;
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: bold;
   color: black;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, black, black);
+  background-position: left bottom;
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+.main-press .main-press__container a:hover {
+  background-size: 100% 1px;
 }
 
 .fill {

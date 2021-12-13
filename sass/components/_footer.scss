@@ -27,10 +27,12 @@
                 p{
                     margin: 0;
                     display: inline-block;
-                    font-size: 1.6rem;
+                    @include font(1.6rem, normal ,300,$ft-white)
                 }
     
                 img{
+                    position: relative;
+                    top: 3px;
                     height: 16px;
                     width: 16px;
                 }
