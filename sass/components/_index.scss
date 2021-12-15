@@ -30,7 +30,7 @@
             bottom: 0;
             animation: fade-in 3s;
             img{
-                @include images(100%, 300px, 0px, auto, 150px)
+                @include images(100%,600px, 0px, auto, 150px)
               
             }
         }

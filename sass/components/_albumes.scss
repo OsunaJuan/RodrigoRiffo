@@ -6,6 +6,8 @@
 .main-album{
     width: 100%;
     overflow-x: hidden;
+    position: relative;
+    
 
     .main-album__links{
         width: fit-content;
@@ -72,4 +74,22 @@
             
         }
     }
+
+    .Goup {
+        position: absolute;
+        bottom: 5px;
+        right: 50px;
+        img{
+            height: 35px;
+            width: 35px;
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        .Goup{
+            display: none;
+        }
+    }
+
+
 }
